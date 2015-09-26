@@ -40,8 +40,12 @@ img[alt*="logo"]{
     border: solid red 2px;
 }
 
-section:last-child{
-    background-color: blue;
+article{
+
+    text-align: center;
+    background-color: lightblue;
+    height: 200px;
+    padding: 1em;
 }
 /*****************fin image*******************/
 /***************************************fin koko************************************************/
