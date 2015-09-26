@@ -20,6 +20,32 @@ html,body, #wrapper{
     clear: both;
     display: block;
 }
+
+/***********************************debut koko**********************************************/
+li {
+    font-size: small;
+    list-style: none;
+    display: inline;
+}
+/********* reglages des images **********/
+img[alt*="york"]{
+
+    position: relative;
+    max-width: 100%;
+}
+
+img[alt*="logo"]{
+    position: absolute;
+    max-width: 100%;
+    border: solid red 2px;
+}
+
+section:last-child{
+    background-color: blue;
+}
+/*****************fin image*******************/
+/***************************************fin koko************************************************/
+
 /*classe colonne grid*/
 .col-1{
     width: 8.33333333%;
