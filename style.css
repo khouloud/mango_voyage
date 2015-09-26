@@ -1,0 +1,157 @@
+
+*{
+    box-sizing: border-box;
+}
+aside.div,section,header,footer,nav{
+    display: block;
+}
+/*reset*/
+html,body, #wrapper{
+    margin: 0;
+    padding: 0;
+}
+[class*="col-"]{
+    float: left;
+    padding: 0 15px;
+}
+/*container permetteant de garder les elements dans un container sans que ceux ci remonte*/
+.row:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/*classe colonne grid*/
+.col-1{
+    width: 8.33333333%;
+}
+.col-2{
+    width: 16.6666667%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.3333333%;
+}
+.col-5{
+    width: 41.6666667%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.3333333%;
+}
+.col-8{
+    width: 66.6666666%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.3333333%;
+}
+.col-11{
+    width: 91.6666666%;
+}
+.col-12{
+    width: 100%;
+}
+
+.row{
+    height:100%;
+    background-color: palegoldenrod;
+    margin: 1%;
+}
+.cube{
+    background-color:transparent;
+    height: 400px;
+    padding: 1%;
+}
+
+.cube2{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+/*offset*/
+.col-offset-1{
+    margin-left: 8.33333333%;
+}
+.col-offset-2{
+    margin-left: 16.6666667%;
+}
+.col-offset-3{
+    margin-left: 25%;
+}
+.col-offset-4{
+    margin-left: 33.3333333%;
+}
+.col-offset-5{
+    margin-left: 41.6666667%;
+}
+.col-offset-6{
+    margin-left: 50%;
+}
+.col-offset-7{
+    margin-left: 58.3333333%;
+}
+.col-offset-8{
+    margin-left: 66.6666666%;
+}
+.col-offset-9{
+    margin-left: 75%;
+}
+.col-offset-10{
+    margin-left: 83.3333333%;
+}
+.col-offset-11{
+    margin-left: 91.6666666%;
+}
+.col-offset-12{
+    margin-left: 100%;
+}
+
+/* Portrait et Landscape tablette*/
+@media only screen
+and (max-width: 768px) {
+    /*classe colonne grid*/
+    .col-t1{
+        width: 8.33333333%;
+    }
+    .col-t2{
+        width: 16.6666667%;
+    }
+    .col-t3{
+        width: 25%;
+    }
+    .col-t4{
+        width: 33.3333333%;
+    }
+    .col-t5{
+        width: 41.6666667%;
+    }
+    .col-t6{
+        width: 50%;
+    }
+    .col-t7{
+        width: 58.3333333%;
+    }
+    .col-t8{
+        width: 66.6666666%;
+    }
+    .col-t9{
+        width: 75%;
+    }
+    .col-t10{
+        width: 83.3333333%;
+    }
+    .col-t11{
+        width: 91.6666666%;
+    }
+    .col-t12{
+        width: 100%;
+    }
+
+}
