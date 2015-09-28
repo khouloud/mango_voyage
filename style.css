@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
 }
+body,html{
+    height: 100%;
+    width: 100%;
+}
 
 aside.div,section,header,footer,nav{
     display: block;
@@ -25,7 +29,7 @@ p{
 }
 
 li{
-    padding: 5%;
+    padding: 1%;
     display: inline-block;
 }
 
@@ -34,16 +38,39 @@ li{
     padding: 0 15px;
 }
 /*menu*/
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color:#363c48;
+    z-index: 999;
+}
+.logo{
+    padding: 2%;
+}
+.test{
+    float: right;
+}
+
 a.menu-link {
     float: right;
     display: block;
     padding: 1em;
+    text-decoration: none;
+    margin-top: 10px;
+    color: #FFCC66;
+}
+
+nav{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
 }
 nav[role=navigation] {
     clear: both;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
@@ -57,43 +84,32 @@ nav[role=navigation].active {
 nav[role=navigation] ul {
     margin: 0;
     padding: 0;
-    border-top: 1px solid #808080;
+    border-top: 2px solid #FFCC66;
+    float: right;
 }
+
 nav[role=navigation] li a {
     display: block;
     padding: 0.8em;
-    border-bottom: 1px solid #808080;
-}
+    text-decoration: none;
+    color: #FFCC66;
 
-@media screen and (min-width: 48.25em) {
-    a.menu-link {
-        display: none;
-    }
-    .js nav[role=navigation] {
-        max-height: none;
-    }
-    nav[role=navigation] ul {
-        margin: 0 0 0 -0.25em;
-        border: 0;
-    }
-
-    nav[role=navigation]  li {
-        display: inline-block;
-        margin: 0 0.25em;
-    }
-    nav[role=navigation] li a {
-        border: 0;
-        color: white;
-        list-style-type: none;
-    }
 }
 
 /*carousel*/
+section{
+    display: block;
+    position: relative;
+    height: 75%;
+    padding: 0!important;
+    margin: 0;
+}
 .Carousel-container{
     position: absolute;
     width: 100%;
     height: 100%;
     overflow:hidden;
+    z-index: -900;
 }
 
 figure {
@@ -332,7 +348,55 @@ figure:nth-child(12) {
     }
 }
 
+/* section bloc*/
+.bloc{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 25%;
+    z-index:-2;
+}
 
+
+.bloc .col-8{
+    margin-left:16.6666667%;
+    height: 100%;
+    background-color: transparent;
+    margin-top: -8%;
+}
+.col-8 article.col-3{
+    height: 100%;
+    padding: 1%;
+}
+ article.col-3 > div:first-child{
+    background-color: rgba(247, 101, 112, 1);
+    height: 100%;
+}
+article.col-3:nth-child(2)>div{
+    background-color: rgba(195, 119, 228, 1);
+    height: 100%;
+}
+article.col-3:nth-child(3)>div{
+    background-color: rgba(27, 188, 155, 1);
+    height: 100%;
+}
+article.col-3:nth-child(4)>div{
+    background-color: rgba(83, 149, 193,1);
+    height: 100%;
+}
+
+footer.col-12 {
+    height: 5em;
+    padding: 0.5em;
+    background-color: #363c48;
+}
+footer p {
+    margin: 0.25em 0;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    padding: 0;
+}
 
 /*container permetteant de garder les elements dans un container sans que ceux ci remonte*/
 .row:after{
@@ -379,24 +443,13 @@ figure:nth-child(12) {
 }
 
 .row{
-    height:100%;
     background-color: palegoldenrod;
     margin: 1%;
 }
-.cube{
-    background-color:transparent;
-    height: 400px;
-    padding: 1%;
-}
 
-.cube2{
-    width: 100%;
-    height: 100%;
-    background-color: white;
-}
 /* Portrait et Landscape tablette*/
 @media only screen
-and (max-width: 768px) {
+and (max-width: 768px){
     /*classe colonne grid*/
     .col-t1{
         width: 8.33333333%;
@@ -434,9 +487,60 @@ and (max-width: 768px) {
     .col-t12{
         width: 100%;
     }
+    .bloc .col-8{
+        margin-left: 0;
+    }
+    [class*="col-"]{
+        padding: 0;
+    }
+    .logo{
+        padding: 5%;
+        width: 250px;
+    }
+    footer.col-12 {
+        background-color: #363c48;
+        bottom: 0;
+        height: 5em;
+        padding: 0.5em;
+        position: fixed;
+        z-index: 999;
+    }
+    footer p {
+        margin: 0.25em 0;
+        color: #fff;
+        font-size: 2em;
+        font-weight: 400;
+        text-align: center;
+        padding: 0;
+    }
 
 }
-@media only screen
-and (max-width: 768px) {
+
+@media only screen and (max-width: 767px) {
+    nav[role="navigation"] {
+        float: none;
+    }
 
 }
+@media screen and (min-width: 48.25em) {
+    a.menu-link {
+        display: none;
+    }
+    .js nav[role=navigation] {
+        max-height: none;
+    }
+    nav[role=navigation] ul {
+        margin: 0 0 0 -0.25em;
+        border: 0;
+    }
+    nav[role=navigation]  li {
+        display: inline-block;
+        margin: 0 0.25em;
+    }
+    nav[role=navigation] li a {
+        border: 0;
+    }
+}
+
+
+
