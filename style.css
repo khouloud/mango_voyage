@@ -5,6 +5,11 @@
     padding: 0;
 }
 body,html{
+    height: 100vh;
+    width: 100%;
+}
+
+.all{
     height: 100%;
     width: 100%;
 }
@@ -95,6 +100,8 @@ nav[role=navigation] li a {
     color: #FFCC66;
 
 }
+/*text-animation*/
+
 
 /*carousel*/
 section{
@@ -388,6 +395,8 @@ footer.col-12 {
     height: 5em;
     padding: 0.5em;
     background-color: #363c48;
+    position: fixed;
+    bottom: 0;
 }
 footer p {
     margin: 0.25em 0;
