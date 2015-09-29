@@ -8,6 +8,12 @@ body,html{
     height: 100vh;
     width: 100%;
 }
+h1{
+    color: gray;
+    border-bottom: 5px solid rgba(247, 101, 112, 0.9);
+    padding-bottom: 25px !important;
+    margin-left: 1%;
+}
 
 .all{
     height: 100%;
@@ -63,10 +69,9 @@ p{
 }
 
 li{
-    padding: 1%;
+    padding: 1%!important;
     display: inline-block;
 }
-
 [class*="col-"]{
     float: left;
     padding: 0 15px;
@@ -131,7 +136,87 @@ nav[role=navigation] li a {
     font-size: 14px;
 
 }
-/*text-animation*/
+/*section gallerie*/
+.gal {
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100% !important;
+    z-index: -2;
+}
+.img{
+    margin-top: 190px;
+    padding-top: 60px;
+}
+
+/*gallery*/
+img{
+    max-width: 100%;
+
+
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+figure.gallerie img{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+figcaption{
+    background-color: aqua;
+    color: white;
+    font-family: "Arial",sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    height: 4em;
+    margin-top: -6px;
+    padding: 1em;
+    text-align: center;
+
+}
+html body section ul.col-12.img li.col-4 figure.gallerie{
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+
+}
+img[alt*="London"] + figcaption{
+    background-color: rgba(247, 101, 112,0.9);
+}
+
+img[alt*="Rome"] + figcaption{
+    background-color: rgba(195, 119, 228,0.9);
+}
+
+img[alt*="New delhi"] + figcaption{
+    background-color: rgba(255, 210, 5 ,0.9);
+}
+
+img[alt*="Cuba"] + figcaption{
+    background-color: rgba(27, 188, 155,0.9);
+}
+
+img[alt*="US"] + figcaption{
+    background-color: rgba(195, 119, 228,0.9);
+}
+
+img[alt*="Rome"] + figcaption{
+    background-color: rgba(232, 157, 103,0.9);
+}
+
+img[alt*="Berlin"] + figcaption{
+    background-color: rgba(83, 149, 193,0.9);
+}
+
+img[alt*="Paris"] + figcaption{
+    background-color: rgba(232, 157, 103,0.9);
+}
+
+img[alt*="Bahamas"] + figcaption{
+    background-color: rgba(247, 101, 112,0.9);
+}
 
 
 /*carousel*/
@@ -153,7 +238,7 @@ section{
     z-index: -900;
 }
 
-figure {
+.carousel{
     position: absolute;
     top: 0;
     left: 0;
@@ -168,7 +253,7 @@ figure {
     -webkit-animation: slideShow 24s linear infinite 0s;
 }
 
-figure:first-child {
+.carousel:first-child {
     opacity: 1;
     background: url(img/pic1.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -177,7 +262,7 @@ figure:first-child {
     background-size: cover;
 }
 
-figure:nth-child(2) {
+.carousel:nth-child(2) {
     animation-delay: 6s;
     -o-animation-delay: 6s;
     -moz-animation-delay: 6s;
@@ -189,7 +274,7 @@ figure:nth-child(2) {
     background-size: cover;
 }
 
-figure:nth-child(3) {
+.carousel:nth-child(3) {
     animation-delay: 12s;
     -o-animation-delay: 12s;
     -moz-animation-delay: 12s;
@@ -201,7 +286,7 @@ figure:nth-child(3) {
     background-size: cover;
 }
 
-figure:nth-child(4) {
+.carousel:nth-child(4) {
     animation-delay: 18s;
     -o-animation-delay: 18s;
     -moz-animation-delay: 18s;
@@ -212,7 +297,7 @@ figure:nth-child(4) {
     -o-background-size: cover;
     background-size: cover;
 }
-figure:nth-child(5) {
+.carousel:nth-child(5) {
     animation-delay: 24s;
     -o-animation-delay: 24s;
     -moz-animation-delay: 24s;
@@ -223,7 +308,7 @@ figure:nth-child(5) {
     -o-background-size: cover;
     background-size: cover;
 }
-figure:nth-child(6) {
+.carousel:nth-child(6) {
     animation-delay: 30s;
     -o-animation-delay: 30s;
     -moz-animation-delay: 30s;
@@ -234,7 +319,7 @@ figure:nth-child(6) {
     -o-background-size: cover;
     background-size: cover;
 }
-figure:nth-child(7) {
+.carousel:nth-child(7) {
     animation-delay: 36s;
     -o-animation-delay: 36s;
     -moz-animation-delay: 36s;
@@ -245,7 +330,7 @@ figure:nth-child(7) {
     -o-background-size: cover;
     background-size: cover;
 }
-figure:nth-child(8) {
+.carousel:nth-child(8) {
     animation-delay: 42s;
     -o-animation-delay: 42s;
     -moz-animation-delay: 42s;
@@ -256,7 +341,7 @@ figure:nth-child(8) {
     -o-background-size: cover;
     background-size: cover;
 }
-figure:nth-child(9) {
+.carousel:nth-child(9) {
     animation-delay: 48s;
     -o-animation-delay: 48s;
     -moz-animation-delay: 48s;
@@ -267,7 +352,7 @@ figure:nth-child(9) {
     -o-background-size: cover;
     background-size: cover;
 }
-figure:nth-child(10) {
+.carousel:nth-child(10) {
     animation-delay: 54s;
     -o-animation-delay: 54s;
     -moz-animation-delay: 54s;
@@ -278,7 +363,7 @@ figure:nth-child(10) {
     -o-background-size: cover;
     background-size: cover;
 }
-figure:nth-child(11) {
+.carousel:nth-child(11) {
     animation-delay: 60s;
     -o-animation-delay: 60s;
     -moz-animation-delay: 60s;
@@ -289,7 +374,7 @@ figure:nth-child(11) {
     -o-background-size: cover;
     background-size: cover;
 }
-figure:nth-child(12) {
+.carousel:nth-child(12) {
     animation-delay: 66s;
     -o-animation-delay: 66s;
     -moz-animation-delay: 66s;
@@ -457,6 +542,7 @@ footer p {
     clear: both;
     display: block;
 }
+
 /*classe colonne grid*/
 .col-1{
     width: 8.33333333%;
@@ -496,8 +582,8 @@ footer p {
 }
 
 .row{
-    background-color: palegoldenrod;
     margin: 1%;
+    background-color: whitesmoke;
 }
 
 /* Portrait et Landscape tablette*/
@@ -618,3 +704,94 @@ footer p {
 
 
 
+/***********************************************************************************************************************
+***********************************contact style************************************************************************/
+form{
+    padding-top: 160px;
+}
+.content{
+    margin-top: 10em;
+}
+form > div {
+    clear: both;
+    overflow: hidden;
+    padding: 1px;
+    margin: 0 0 10px 0;
+}
+form > div > fieldset > div > div {
+    margin: 0 0 5px 0;
+}
+form > div > label,
+legend {
+    width: 25%;
+    padding-right: 10px;
+}
+form > div > div,
+form > div > fieldset > div {
+    width: 75%;
+    float: right;
+}
+form > div > fieldset label {
+    font-size: 90%;
+}
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+    width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+    outline: 0;
+    border-color: #4697e4;
+}
+
+@media (max-width: 600px) {
+    form > div {
+        margin: 0 0 15px 0;
+    }
+    form > div > label,
+    legend {
+        width: 100%;
+        float: none;
+        margin: 0 0 5px 0;
+    }
+    form > div > div,
+    form > div > fieldset > div {
+        width: 100%;
+        float: none;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    input[type=password],
+    textarea,
+    select {
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    form > div > label,
+    legend {
+        text-align: right;
+    }
+}

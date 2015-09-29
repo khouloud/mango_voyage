@@ -1,41 +1,59 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style_gallery_contact.css">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
+<div class="all">
+
+    <header class="col-12">
+        <a href="#">
+            <img class="logo" src="img/mango.svg">
+        </a>
+
+        <a href="#menu" class="menu-link">Menu</a>
+        <nav id="menu" role="navigation" class="col-5 col-t12">
+            <ul class="col-6 col-t12">
+                <li class="col-t12"><a href="index.html">Accueil</a></li>
+                <li class="col-t12"><a href="gallery.html">Galerie</a></li>
+                <li class="col-t12"><a href="#">Videos</a></li>
+                <li class="col-t12"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 <body>
-    <div class="content">
+
+<div class="col-12 gal">
+
+    <div class="row">
+        <h1 class="col-4">Contact</h1>
+    <div class="content ">
         <form action="#">
 
-            <div>
-                <label class="desc" id="title1" for="Field1">Full Name</label>
-                <div>
-                    <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+
+                <div class="col-10">
+                    <input id="Field1" placeholder="Nom" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
                 </div>
-            </div>
 
-            <div>
-                <label class="desc" id="title3" for="Field3">
-                    Email
-                </label>
-                <div>
-                    <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3">
+
+
+                <div class="col-10">
+                    <input id="Field3" placeholder="mail" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3">
                 </div>
-            </div>
 
-            <div>
-                <label class="desc" id="title4" for="Field4">
-                    Message
-                </label>
 
-                <div>
-                    <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+
+
+                <div class="col-10">
+                    <textarea id="Field4" placeholder="Message" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
                 </div>
-            </div>
 
-            <div>
+
                 <fieldset>
 
                     <legend id="title5" class="desc">
@@ -57,7 +75,7 @@
                             <label class="choice" for="Field5_2">Third Choice</label>
                         </div>
                     </div>
-                </fieldset>
+
             </div>
 
             <div>
@@ -103,5 +121,16 @@
 
         </form>
     </div>
+    <footer class="col-12">
+        <p>MangoVoyage</p>
+    </footer>
+        </div>
+    </div>
+        </div>
+    </section>
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script type="" src="main.js"></script>
 </body>
 </html>
