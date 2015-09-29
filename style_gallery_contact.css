@@ -12,6 +12,85 @@ html,body, #wrapper{
     margin: 0;
     padding: 0;
 }
+/*menu*/
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color:#363c48;
+    z-index: 999;
+}
+.logo{
+    padding: 2%;
+}
+.test{
+    float: right;
+}
+
+a.menu-link {
+    float: right;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    margin-top: 10px;
+    color: #FFCC66;
+}
+
+nav{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+nav[role=navigation] {
+    clear: both;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.js nav[role=navigation] {
+    overflow: hidden;
+    max-height: 0;
+}
+nav[role=navigation].active {
+    max-height: 15em;
+}
+nav[role=navigation] ul {
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid #FFCC66;
+    float: right;
+}
+
+nav[role=navigation] li a {
+    display: block;
+    padding: 0.8em;
+    text-decoration: none;
+    color: #FFCC66;
+
+}
+
+footer.col-12 {
+    background-color: #363c48;
+    bottom: 0;
+    height: 5em;
+    padding: 0.5em;
+    position: fixed;
+    z-index: 999;
+}
+footer p {
+    margin: 0.25em 0;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    padding: 0;
+}
+
+
+
+/***********fin menu *******************/
 li{
     display: inline-block;
     list-style-type: none;
@@ -28,8 +107,6 @@ li{
 figure img{
     width: 500px;
     position: relative;
-    border: 1px solid #333;
-    margin: 2%;
     overflow: hidden;
 }
 
@@ -43,6 +120,7 @@ figcaption{
     padding: 1em;
     text-align: center;
     font-family: "Arial", sans-serif;
+    color: #ffffff;
     margin-top: -6px;
     background-color: aqua;
     height: 4em;
@@ -233,4 +311,94 @@ and (max-width: 768px) {
 @media only screen
 and (max-width: 768px) {
 
+}
+
+/***********************************************************************************************************************
+***********************************contact style************************************************************************/
+.content{
+    margin-top: 10em;
+}
+form > div {
+    clear: both;
+    overflow: hidden;
+    padding: 1px;
+    margin: 0 0 10px 0;
+}
+form > div > fieldset > div > div {
+    margin: 0 0 5px 0;
+}
+form > div > label,
+legend {
+    width: 25%;
+    float: left;
+    padding-right: 10px;
+}
+form > div > div,
+form > div > fieldset > div {
+    width: 75%;
+    float: right;
+}
+form > div > fieldset label {
+    font-size: 90%;
+}
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+    width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+    outline: 0;
+    border-color: #4697e4;
+}
+
+@media (max-width: 600px) {
+    form > div {
+        margin: 0 0 15px 0;
+    }
+    form > div > label,
+    legend {
+        width: 100%;
+        float: none;
+        margin: 0 0 5px 0;
+    }
+    form > div > div,
+    form > div > fieldset > div {
+        width: 100%;
+        float: none;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    input[type=password],
+    textarea,
+    select {
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    form > div > label,
+    legend {
+        text-align: right;
+    }
 }
