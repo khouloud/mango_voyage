@@ -369,14 +369,20 @@ figure:nth-child(12) {
     background-color: transparent;
     margin-top: -8%;
 }
+article.col-3{
+    width: 25%;
+}
+
 .col-8 article.col-3{
     height: 100%;
     padding: 1%;
 }
+
  article.col-3 > div:first-child{
     background-color: rgba(247, 101, 112, 1);
     height: 100%;
 }
+
 article.col-3:nth-child(2)>div{
     background-color: rgba(195, 119, 228, 1);
     height: 100%;
@@ -456,9 +462,8 @@ footer p {
 }
 
 /* Portrait et Landscape tablette*/
-@media only screen
-and (max-width: 768px){
-    /*classe colonne grid*/
+@media only screen and (max-width: 768px){
+    /*class colonne grid*/
     .col-t1{
         width: 8.33333333%;
     }
@@ -501,10 +506,17 @@ and (max-width: 768px){
     [class*="col-"]{
         padding: 0;
     }
+    nav[role="navigation"] {
+        float: none;
+    }
     .logo{
         padding: 5%;
         width: 250px;
     }
+    article.col-t12{
+        width: 100%;
+    }
+
     footer.col-12 {
         background-color: #363c48;
         bottom: 0;
@@ -524,12 +536,6 @@ and (max-width: 768px){
 
 }
 
-@media only screen and (max-width: 767px) {
-    nav[role="navigation"] {
-        float: none;
-    }
-
-}
 @media screen and (min-width: 48.25em) {
     a.menu-link {
         display: none;
