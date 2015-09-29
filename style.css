@@ -13,6 +13,35 @@ body,html{
     height: 100%;
     width: 100%;
 }
+.room-check {
+    margin: 200px auto;
+    margin-left: 20%;
+    height: 50px;
+    background-color:rgba(212,208,212,1);
+    border-bottom:5px solid white;
+    padding: 2%;
+}
+.input{
+padding: 1%!important;
+}
+input[type=text] {
+    border-radius: 5px;
+    height: 25px;
+    border: none;
+    margin-left: 14px;
+    padding: 2px;
+}
+
+input[type=button] {
+    border-radius: 5px;
+    height: 25px;
+    width: 160px;
+    border: none;
+    margin-left: 14px;
+    float: right;
+    background-color: rgba(255,114,153,1);
+    color: white;
+}
 
 aside.div,section,header,footer,nav{
     display: block;
@@ -48,9 +77,10 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
-    background-color:#363c48;
+    background-color:white;
     z-index: 999;
 }
+
 .logo{
     padding: 2%;
 }
@@ -97,7 +127,8 @@ nav[role=navigation] li a {
     display: block;
     padding: 0.8em;
     text-decoration: none;
-    color: #FFCC66;
+    color: grey;
+    font-size: 14px;
 
 }
 /*text-animation*/
@@ -110,7 +141,10 @@ section{
     height: 75%;
     padding: 0!important;
     margin: 0;
+    background-color: lightgrey;
+    z-index: -999;
 }
+
 .Carousel-container{
     position: absolute;
     width: 100%;
@@ -377,10 +411,13 @@ article.col-3{
     height: 100%;
     padding: 1%;
 }
-
  article.col-3 > div:first-child{
     background-color: rgba(247, 101, 112, 1);
     height: 100%;
+     color: white;
+     padding: 5%;
+     font-weight: 800;
+     font-size: 20px;
 }
 
 article.col-3:nth-child(2)>div{
@@ -399,18 +436,20 @@ article.col-3:nth-child(4)>div{
 footer.col-12 {
     height: 5em;
     padding: 0.5em;
-    background-color: #363c48;
+    background-color: white;
     position: fixed;
     bottom: 0;
 }
+
 footer p {
     margin: 0.25em 0;
-    color: #fff;
+    color: grey;
     font-size: 2em;
     font-weight: 400;
     text-align: center;
     padding: 0;
 }
+
 
 /*container permetteant de garder les elements dans un container sans que ceux ci remonte*/
 .row:after{
@@ -516,6 +555,28 @@ footer p {
     article.col-t12{
         width: 100%;
     }
+    .room-check{
+        margin-left:0 ;
+        height: 180px;
+        margin-top: 70%;
+    }
+    input[type="text"] {
+        width: 100%;
+        margin: 2px;
+    }
+    input[type="button"] {
+
+        float: left;
+        margin-top: 2px;
+        margin: 0;
+    }
+
+    nav[role=navigation] li a {
+        font-size: 12px;
+    }
+    .Carousel-container{
+        visibility: hidden;
+    }
 
     footer.col-12 {
         background-color: #363c48;
@@ -533,7 +594,6 @@ footer p {
         text-align: center;
         padding: 0;
     }
-
 }
 
 @media screen and (min-width: 48.25em) {
