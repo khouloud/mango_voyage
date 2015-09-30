@@ -34,7 +34,7 @@
             <div class="input col-t12">
                 <form>
                     <div class="form-wrapper">
-                        <input type="text" value="" name="name" id="name" placeholder="Name" required/>
+                        <input type="text" value="" name="name" id="name" placeholder="Name" pattern="[a-zA-Z0-9]+" required/>
                         <label for="name"></label>
                     </div>
                     <div class="form-wrapper">
@@ -42,7 +42,7 @@
                         <label for="email"></label>
                     </div>
                     <div class="form-wrapper">
-                        <input type="tel" pattern="[0-9]{10}" id="tel" name="tel" title="Tel" placeholder="Téléphone"/>
+                        <input type="tel"  id="tel" name="tel" title="Tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="111-111-1111"/>
                         <label for="tel"></label>
                     </div>
                     <div class="form-wrapper">
@@ -51,10 +51,10 @@
                     </div>
                     <div class="form-wrapper">
                         <h4>Vous êtes</h4>
-                        <input type="checkbox" id="homme" checked="checked"/>
+                        <input type="radio" id="homme" name="sexe"/>
                         <label for="homme">Homme</label>
 
-                        <input type="checkbox" id="femme" checked="checked"/>
+                        <input type="radio" id="femme" name="sexe"/>
                         <label for="femme">femme</label>
                     </div>
 
