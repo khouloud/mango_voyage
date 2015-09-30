@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-< lang="en">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-
+<body>
 <div class="all">
+
     <header class="col-12">
-        <a href="#">
+        <a href="index.html" >
             <img class="logo" src="img/mango.svg">
         </a>
 
@@ -26,45 +27,60 @@
         </nav>
     </header>
 
-    <section class="col-12 form">
+    <section class="col-12 blocs">
+        <h1 class="col-4 title">Contactez-nous</h1>
+        <div class="room-check col-6 col-t12">
+            <div class="input col-t12">
+                <form>
+                <div class="form-wrapper">
+                    <input type="text" value="" name="name" id="name" placeholder="Name"  required/>
+                    <label for="name"></label>
+                </div>
+                <div class="form-wrapper">
+                    <input type="text" value="" name="email" id="email" placeholder="Email" required/>
+                    <label for="email"></label>
+                </div>
+                <div class="form-wrapper">
+                    <input type="tel" pattern="[0-9]{10}" id="tel" name="tel" title="Tel" placeholder="Téléphone"/>
+                    <label for="tel"></label>
+                </div>
+                <div class="form-wrapper">
+                    <textarea name="message" id="message" placeholder="Message" required></textarea>
+                    <label for="message"></label>
+                </div>
+                    <div class="form-wrapper">
+                        <h4>Vous êtes</h4>
+                    <input type="checkbox" id="homme" checked="checked" />
+                    <label for="homme">Homme</label>
 
-        <div class="row">
-            <h1 class="col-4">Contactez-nous</h1>
+                        <input type="checkbox" id="femme" checked="checked" />
+                        <label for="femme">femme</label>
+                    </div>
 
-            <form role="form">
-                <div class="form-group">
-                    <label for="email">Email address:</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd">
-                </div>
-                <div class="checkbox">
-                    <label><input type="checkbox"> Remember me</label>
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
+                    <div class="form-wrapper">
+
+                <label for="Province">Vous venez de</label>
+                <select name="Province" id="province" form="province">
+                    <option value="France">France</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Japon">Japon</option>
+                </select>
+                        </div>
+                <div class="form-wrapper">
+                <input type="submit" value="Envoyez">
+                    </div>
+                </form>
+            </div>
         </div>
-
-        <br>
-        <br>
-        <br>
-
     </section>
-
     <footer class="col-12">
         <p>MangoVoyage</p>
     </footer>
-
 </div>
-
-
-
-
-
-
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script type="" src="main.js"></script>
 </body>
 </html>
+
+

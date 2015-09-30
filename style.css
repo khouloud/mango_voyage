@@ -22,38 +22,6 @@ h1 {
     width: 100%;
 }
 
-.room-check {
-    margin: 200px auto;
-    margin-left: 20%;
-    height: 50px;
-    background-color: rgba(212, 208, 212, 1);
-    border-bottom: 5px solid white;
-    padding: 2%;
-    z-index: 22;
-}
-
-.input {
-    padding: 1% !important;
-}
-
-input[type=text] {
-    border-radius: 5px;
-    height: 25px;
-    border: none;
-    margin-left: 14px;
-    padding: 2px;
-}
-
-input[type=button] {
-    border-radius: 5px;
-    height: 25px;
-    width: 160px;
-    border: none;
-    margin-left: 14px;
-    float: right;
-    background-color: rgba(255, 114, 153, 1);
-    color: white;
-}
 
 aside.div, section, header, footer, nav {
     display: block;
@@ -105,6 +73,7 @@ header {
 .test {
     float: right;
 }
+
 
 a.menu-link {
     float: right;
@@ -247,7 +216,6 @@ section {
     height: 75%;
     padding: 0 !important;
     margin: 0;
-    background-color: lightgrey;
 }
 
 .Carousel-container {
@@ -557,6 +525,7 @@ footer.col-12 {
     background-color: white;
     position: fixed;
     bottom: 0;
+    z-index: 999;
 }
 
 footer p {
@@ -585,11 +554,6 @@ footer p {
     height: 100%;
 }
 
-/*form*/
-form {
-    width: 100%;
-    height: 100%;
-}
 #london{
     background-color: rgba(247, 101, 112, 0.9);
 }
@@ -617,6 +581,94 @@ form {
 #rome{
     background-color: rgba(232, 157, 103, 0.9);
 }
+
+/*form*/
+.blocs{
+    height: 110%;
+    background-color: whitesmoke;
+}
+
+.title{
+    padding-top: 150px;
+}
+.room-check {
+    margin-left: 0;
+    height: 180px;
+    margin-top: 250px;
+    position: absolute;
+    z-index: 22;
+}
+
+input[type="text"] {
+    width: 100%;
+    margin: 2px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+input[type="tel"] {
+    width: 100%;
+    margin: 2px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+input[type="submit"] {
+    width: 120px;
+    margin: 2px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(247, 101, 112, 0.9) ;
+    font-family: "Arial", sans-serif;
+    font-size:14px;
+    font-weight:600;
+    color: gray;
+    background-color:white;
+}
+select{
+    margin: 2px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(247, 101, 112, 0.9);
+}
+
+textarea {
+    width: 100%;
+    margin: 2px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-color: transparent;
+
+}
+
+.input {
+    padding: 1% !important;
+    width: 100%;
+    margin-left: 50%;
+    margin-top: 20px;
+    border: none;
+}
+input[placeholder]{
+    padding: 1%;
+
+}
+textarea[placeholder="Message"]{
+    padding: 1%;
+}
+h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*formulaire animation*/
+
+
 
 /*container permetteant de garder les elements dans un container sans que ceux ci remonte*/
 .row:after {
@@ -759,25 +811,6 @@ form {
         width: 100%;
     }
 
-    .room-check {
-        margin-left: 0;
-        height: 180px;
-        margin-top: 70%;
-        position: absolute;
-        z-index: 22;
-    }
-
-    input[type="text"] {
-        width: 100%;
-        margin: 2px;
-    }
-
-    input[type="button"] {
-
-        float: left;
-        margin-top: 2px;
-        margin: 0;
-    }
 
     nav[role=navigation] li a {
         font-size: 12px;
@@ -788,17 +821,18 @@ form {
     }
 
     footer.col-12 {
-        background-color: #363c48;
+        background-color: white;
         bottom: 0;
         height: 5em;
         padding: 0.5em;
         position: fixed;
         z-index: 999;
+        color: gray;
     }
 
     footer p {
         margin: 0.25em 0;
-        color: #fff;
+        color: gray;
         font-size: 2em;
         font-weight: 400;
         text-align: center;
@@ -806,7 +840,30 @@ form {
     }
     .hero{
         background-image: url("img/pic1.jpg");
+        background-size: cover;
     }
+    .input {
+        padding: 1% !important;
+        width: 100%;
+        margin-left: 0;
+    }
+    .title {
+        padding-top: 150px!important;
+    }
+}
+@media screen and (max-width:320px){
+    .blocs {
+        height: 160%;
+        background-color: whitesmoke;
+    }
+
+}
+@media screen and (max-width:568px){
+    .blocs {
+        height: 300%;
+        background-color: whitesmoke;
+    }
+
 }
 
 @media screen and (min-width: 48.25em) {
