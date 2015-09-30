@@ -1,4 +1,5 @@
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,7 +22,6 @@ h1 {
     height: 100%;
     width: 100%;
 }
-
 
 aside.div, section, header, footer, nav {
     display: block;
@@ -74,7 +74,6 @@ header {
     float: right;
 }
 
-
 a.menu-link {
     float: right;
     display: block;
@@ -82,6 +81,28 @@ a.menu-link {
     text-decoration: none;
     margin-top: 10px;
     color: #FFCC66;
+}
+
+a {
+    text-decoration:none;
+    font-size:2em;
+    position:relative;
+    color:#EA3556;
+}
+
+a::after {
+    content:"";
+    height:2px;
+    width:0;
+    background-color:#EA3556;
+    position:absolute;
+    bottom:0;
+    left:0;
+    transition:width 500ms ease;
+}
+
+a:hover::after {
+    width:100%;
 }
 
 nav {
@@ -207,9 +228,10 @@ img[alt*="Bahamas"] + figcaption {
 }
 
 /*carousel*/
-.hero{
+.hero {
     z-index: -999;
 }
+
 section {
     display: block;
     position: relative;
@@ -554,43 +576,52 @@ footer p {
     height: 100%;
 }
 
-#london{
+#london {
     background-color: rgba(247, 101, 112, 0.9);
 }
-#usa{
+
+#usa {
     background-color: rgba(195, 119, 228, 0.9);
 }
-#cuba{
+
+#cuba {
     background-color: rgba(27, 188, 155, 0.9);
 }
-#paris{
+
+#paris {
     background-color: rgba(232, 157, 103, 0.9);
 }
-#berlin{
+
+#berlin {
     background-color: rgba(83, 149, 193, 0.9);
 }
-#new-dehli{
+
+#new-dehli {
     background-color: rgba(255, 210, 5, 0.9);
 }
-#dubai{
+
+#dubai {
     background-color: aqua;
 }
-#bahamas{
+
+#bahamas {
     background-color: rgba(247, 101, 112, 0.9);
 }
-#rome{
+
+#rome {
     background-color: rgba(232, 157, 103, 0.9);
 }
 
 /*form*/
-.blocs{
+.blocs {
     height: 110%;
     background-color: whitesmoke;
 }
 
-.title{
+.title {
     padding-top: 150px;
 }
+
 .room-check {
     margin-left: 0;
     height: 180px;
@@ -607,6 +638,7 @@ input[type="text"] {
     border-radius: 5px;
     border-color: transparent;
 }
+
 input[type="tel"] {
     width: 100%;
     margin: 2px;
@@ -615,6 +647,7 @@ input[type="tel"] {
     border-radius: 5px;
     border-color: transparent;
 }
+
 input[type="submit"] {
     width: 120px;
     margin: 2px;
@@ -622,14 +655,15 @@ input[type="submit"] {
     margin-top: 20px;
     border-radius: 5px;
     border: none;
-    box-shadow: 2px 2px 2px rgba(247, 101, 112, 0.9) ;
+    box-shadow: 2px 2px 2px rgba(247, 101, 112, 0.9);
     font-family: "Arial", sans-serif;
-    font-size:14px;
-    font-weight:600;
+    font-size: 14px;
+    font-weight: 600;
     color: gray;
-    background-color:white;
+    background-color: white;
 }
-select{
+
+select {
     margin: 2px;
     height: 30px;
     margin-top: 20px;
@@ -654,21 +688,22 @@ textarea {
     margin-top: 20px;
     border: none;
 }
-input[placeholder]{
+
+input[placeholder] {
     padding: 1%;
 
 }
-textarea[placeholder="Message"]{
+
+textarea[placeholder="Message"] {
     padding: 1%;
 }
-h4{
+
+h4 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 /*formulaire animation*/
-
-
 
 /*container permetteant de garder les elements dans un container sans que ceux ci remonte*/
 .row:after {
@@ -793,6 +828,7 @@ h4{
     nav[role="navigation"] {
         float: none;
     }
+
     a.menu-link {
         float: right;
         display: inline-block;
@@ -810,7 +846,6 @@ h4{
     article.col-t12 {
         width: 100%;
     }
-
 
     nav[role=navigation] li a {
         font-size: 12px;
@@ -838,27 +873,32 @@ h4{
         text-align: center;
         padding: 0;
     }
-    .hero{
+
+    .hero {
         background-image: url("img/pic1.jpg");
         background-size: cover;
     }
+
     .input {
         padding: 1% !important;
         width: 100%;
         margin-left: 0;
     }
+
     .title {
-        padding-top: 150px!important;
+        padding-top: 150px !important;
     }
 }
-@media screen and (max-width:320px){
+
+@media screen and (max-width: 320px) {
     .blocs {
         height: 160%;
         background-color: whitesmoke;
     }
 
 }
-@media screen and (max-width:568px){
+
+@media screen and (max-width: 568px) {
     .blocs {
         height: 300%;
         background-color: whitesmoke;
