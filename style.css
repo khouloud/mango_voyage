@@ -91,7 +91,7 @@ a {
     color:#EA3556;
 }
 
-a::after {
+nav a::after {
     content:"";
     height:2px;
     width:0;
@@ -102,7 +102,7 @@ a::after {
     transition:width 500ms ease;
 }
 
-a:hover::after {
+nav a:hover::after {
     width:100%;
 }
 
@@ -178,8 +178,8 @@ figcaption {
     font-family: "Arial", sans-serif;
     font-size: 20px;
     font-weight: 900;
-    height: 4em;
-    margin-top: -6px;
+    /*height: 4em;*/
+    /*margin-top: -6px;*/
     padding: 1em;
     text-align: center;
 
@@ -554,10 +554,11 @@ footer.col-12 {
 footer p {
     margin: 0.25em 0;
     color: grey;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 400;
     text-align: center;
     padding: 0;
+    vertical-align:
 }
 
 /*video*/
@@ -931,5 +932,32 @@ h4 {
         border: 0;
     }
 }
+/*********************animation gallery****************************/
 
+.gallerie {
+    position:relative;
+    overflow:hidden;
+}
+.gallerie figcaption {
+    width:100%;
+    height:150px;
 
+    position:absolute;
+    top:0;
+    left:0;
+    margin-top:-160px;
+    /*border-radius:5px;*/
+    background-color: rgba(0,0,0,0.75);
+    /*-webkit-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);*/
+    /*box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);*/
+}
+.gallerie:hover figcaption {
+    margin-top:0;
+}
+.text {
+    padding-top: 50px;
+}
+figcaption {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
