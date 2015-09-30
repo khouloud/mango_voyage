@@ -29,6 +29,7 @@ h1 {
     background-color: rgba(212, 208, 212, 1);
     border-bottom: 5px solid white;
     padding: 2%;
+    z-index: 22;
 }
 
 .input {
@@ -162,7 +163,7 @@ nav[role=navigation] li a {
 
 .img {
     margin-top: 190px;
-    padding-top: 90px;
+    padding-top: 120px;
 }
 
 /*gallery*/
@@ -254,7 +255,7 @@ section {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -900;
+    z-index: -9;
 }
 
 .carousel {
@@ -583,14 +584,38 @@ footer p {
     width: 100%;
     height: 100%;
 }
-iframe[id*="London"]+figcaption{
-    background-color: yellow;
-}
 
 /*form*/
 form {
     width: 100%;
     height: 100%;
+}
+#london{
+    background-color: rgba(247, 101, 112, 0.9);
+}
+#usa{
+    background-color: rgba(195, 119, 228, 0.9);
+}
+#cuba{
+    background-color: rgba(27, 188, 155, 0.9);
+}
+#paris{
+    background-color: rgba(232, 157, 103, 0.9);
+}
+#berlin{
+    background-color: rgba(83, 149, 193, 0.9);
+}
+#new-dehli{
+    background-color: rgba(255, 210, 5, 0.9);
+}
+#dubai{
+    background-color: aqua;
+}
+#bahamas{
+    background-color: rgba(247, 101, 112, 0.9);
+}
+#rome{
+    background-color: rgba(232, 157, 103, 0.9);
 }
 
 /*container permetteant de garder les elements dans un container sans que ceux ci remonte*/
@@ -716,10 +741,18 @@ form {
     nav[role="navigation"] {
         float: none;
     }
+    a.menu-link {
+        float: right;
+        display: inline-block;
+        padding: 0.5em;
+        text-decoration: none;
+        margin-top: 10px;
+        color: #FFCC66;
+    }
 
     .logo {
         padding: 5%;
-        width: 250px;
+        width: 150px;
     }
 
     article.col-t12 {
@@ -730,6 +763,8 @@ form {
         margin-left: 0;
         height: 180px;
         margin-top: 70%;
+        position: absolute;
+        z-index: 22;
     }
 
     input[type="text"] {
@@ -769,6 +804,9 @@ form {
         text-align: center;
         padding: 0;
     }
+    .hero{
+        background-image: url("img/pic1.jpg");
+    }
 }
 
 @media screen and (min-width: 48.25em) {
@@ -783,6 +821,7 @@ form {
     nav[role=navigation] ul {
         margin: 0 0 0 -0.25em;
         border: 0;
+        width: 100%;
     }
 
     nav[role=navigation] li {
